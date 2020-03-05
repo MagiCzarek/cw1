@@ -5,6 +5,22 @@ using System.Threading.Tasks;
 
 namespace Cwiczenia1
 {
+    public class Student
+    {
+        
+        public string Nazwisko { get; set; }
+    }
+    public class Osoba
+    {
+        private int _age;
+
+        public int age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+
+    }
     class Program
     {
         public static async Task Main(string[] args)
@@ -19,9 +35,12 @@ namespace Cwiczenia1
                 foreach(var m in matches)
                 {
                     Console.WriteLine(m);
+                    Console.WriteLine(m);
                 }
                 
             }
+            var st = new Student();
+            st.Nazwisko = "Bogo";
 
             Console.WriteLine("Dest");
         }
